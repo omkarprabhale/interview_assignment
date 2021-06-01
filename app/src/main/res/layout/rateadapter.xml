@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/tvratename"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:gravity="start|center_vertical"
+        android:layout_weight="3"/>
+
+    <TextView
+        android:id="@+id/tvratevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="#000000"
+        android:gravity="start|center_vertical"
+        android:layout_weight="3"/>
+    <TextView
+        android:id="@+id/tvbtndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="#C0C0C0"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_weight="3"/>
+
+</LinearLayout>

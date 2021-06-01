@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">White&amp;Black</string>
+    <string name="Password">password</string>
+    <string name="refresh">Refresh</string>
+    <string name="lastupdatedtime">Last Updated Time</string>
+    <string name="base">Base</string>
+    <string name="enterconversionrate">Enter Conversion Rate</string>
+    <string name="convert">Convert</string>
+    <string name="delete">Delete</string>
+</resources>

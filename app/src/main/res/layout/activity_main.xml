@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:id="@+id/llUpper"
+       android:layout_alignParentTop="true"
+       android:layout_width="match_parent"
+       android:background="@color/colorAccent"
+       android:layout_marginTop="@dimen/activity_vertical_margin_small"
+       android:layout_height="@dimen/menubar">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/tvbase"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:textColor="#ffffff"
+               android:text="@string/base"
+               android:textSize="@dimen/textmid"
+               android:padding="@dimen/padding_small"
+               android:layout_weight=".5"/>
+           <TextView
+               android:id="@+id/tvupdatedTime"
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:textColor="#ffffff"
+               android:text="@string/lastupdatedtime"
+               android:padding="@dimen/padding_small"
+               android:layout_weight=".5"/>
+
+
+       </LinearLayout>
+       <TextView
+           android:id="@+id/tvbtnRefresh"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/padding_small"
+           android:layout_weight="1"
+           android:layout_margin="@dimen/activity_vertical_margin_small"
+           android:text="@string/refresh"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:foreground="?android:attr/selectableItemBackground"
+           android:clickable="true"
+           android:focusable="true"
+           android:background="#ffffff"/>
+
+   </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtconvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:hint="@string/enterconversionrate"
+        android:inputType="number"
+        android:layout_below="@+id/llUpper"/>
+
+    <TextView
+        android:id="@+id/tvconvert"
+        android:layout_below="@+id/edtconvert"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center"
+        android:textSize="@dimen/textmid"
+        android:background="#C0C0C0"
+        android:textColor="#000000"
+        android:text="@string/convert"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_height="@dimen/simplebtnht" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRates"
+        android:layout_below="@+id/tvconvert"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
